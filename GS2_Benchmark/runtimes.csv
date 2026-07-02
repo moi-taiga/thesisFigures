@@ -1,0 +1,542 @@
+"Function","N_Cores","Fix_Cutoff","Downsample","N_Genes","N_Cells","User_Time","System_Time","Elapsed_Time","Total_RAM_Used_MiB","Peak_RAM_Used_MiB"
+"binarize_exp(current_sce, ncores = 1)",1,NA,NA,15048,1858,NA,NA,219.556,214.800000000001,4324.6
+"binarize_exp(current_sce, ncores = 3)",3,NA,NA,15048,1858,NA,NA,87.136,214.699999999999,2996.9
+"binarize_exp(current_sce, ncores = 8)",8,NA,NA,15048,1858,NA,NA,44.398,214.599999999999,2996.3
+"binarize_exp(current_sce, ncores = 16)",16,NA,NA,15048,1858,NA,NA,30.215,214.599999999999,2997.8
+"binarize_exp(current_sce, ncores = 24)",24,NA,NA,15048,1858,NA,NA,26.471,214.700000000001,2995.3
+"binarize_exp(current_sce, ncores = 32)",32,NA,NA,15048,1858,NA,NA,27.4229999999999,214.700000000001,2994.4
+"binarize_exp(current_sce, ncores = 64)",64,NA,NA,15048,1858,NA,NA,32.458,214.700000000001,3252.1
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,52.197,1.60000000000036,1074.5
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,69.1849999999999,1.30000000000109,1233.7
+"binarize3_exp(sce_sparse, ncores = 1)",1,NA,NA,15048,1858,NA,NA,236.516,94.6000000000004,3478.8
+"binarize3_exp(sce_sparse, ncores = 3)",3,NA,NA,15048,1858,NA,NA,87.362,94.6000000000004,504.4
+"binarize3_exp(sce_sparse, ncores = 8)",8,NA,NA,15048,1858,NA,NA,35.38,94.6000000000004,532.5
+"binarize3_exp(sce_sparse, ncores = 16)",16,NA,NA,15048,1858,NA,NA,23.096,94.6000000000004,532.799999999999
+"binarize3_exp(sce_sparse, ncores = 24)",24,NA,NA,15048,1858,NA,NA,20.576,94.6000000000004,533
+"binarize3_exp(sce_sparse, ncores = 32)",32,NA,NA,15048,1858,NA,NA,19.3099999999999,94.6000000000004,533.299999999999
+"binarize3_exp(sce_sparse, ncores = 64)",64,NA,NA,15048,1858,NA,NA,21.1280000000002,94.6000000000004,534.4
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,120.514,1,878.700000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,91.2740000000001,1.10000000000036,2111.9
+"binarize_exp(current_sce, ncores = 1)",1,NA,NA,30096,3716,NA,NA,841.953,856,5687.6
+"binarize_exp(current_sce, ncores = 3)",3,NA,NA,30096,3716,NA,NA,320.351,855.900000000001,5046.3
+"binarize_exp(current_sce, ncores = 8)",8,NA,NA,30096,3716,NA,NA,147.008,855.900000000001,7932.7
+"binarize_exp(current_sce, ncores = 16)",16,NA,NA,30096,3716,NA,NA,103.503,855.900000000001,7531.3
+"binarize_exp(current_sce, ncores = 24)",24,NA,NA,30096,3716,NA,NA,86.7220000000002,855.9,7268.5
+"binarize3_exp(sce_sparse, ncores = 1)",1,NA,NA,30096,3716,NA,NA,1107.428,375.300000000001,5915.9
+"binarize3_exp(sce_sparse, ncores = 3)",3,NA,NA,30096,3716,NA,NA,413.032,375.200000000001,2235.6
+"binarize3_exp(sce_sparse, ncores = 8)",8,NA,NA,30096,3716,NA,NA,166.48,375.200000000001,2293.6
+"binarize3_exp(sce_sparse, ncores = 16)",16,NA,NA,30096,3716,NA,NA,94.4989999999998,375.200000000001,2236.6
+"binarize3_exp(sce_sparse, ncores = 24)",24,NA,NA,30096,3716,NA,NA,68.5729999999999,375.200000000001,2237
+"binarize3_exp(sce_sparse, ncores = 32)",32,NA,NA,30096,3716,NA,NA,60.4610000000002,375.200000000001,2134.7
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.15,213.6,3240.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.23,33.6000000000004,137.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,7.497,853.6,5999.6
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.358000000000004,136.300000000001,546.000000000002
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,16.626,2133.4,9599.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.849999999999994,335.800000000001,1343.7
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,32.825,4266.6,14601.6
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.633,662.099999999999,2649.1
+"binarize_exp(current_sce, ncores = 12)",12,NA,NA,15048,1858,NA,NA,32.959,214.800000000001,3258.8
+"find_switch_logistic_fastglm(sce_bined_1, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,30.583,2.5,621
+"find_switch_logistic_fastglm(sce_bined_1, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,33.491,2.29999999999927,711.1
+"binarize3_exp(sce_sparse, ncores = 12)",12,NA,NA,15048,1858,NA,NA,27.893,94.6000000000004,600.400000000001
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,14826,1858,NA,NA,89.386,1.10000000000036,1025.5
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,14826,1858,NA,NA,64.788,1,1977.1
+"binarize3_exp(sce_sparse, ncores = 11)",11,NA,NA,15048,1858,NA,NA,30.75,93.2000000000007,535.6
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,14759,1858,NA,NA,87.474,1.19999999999891,1016.3
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,14759,1858,NA,NA,62.809,1,1980.2
+"binarize3_exp(sce_sparse, ncores = 11)",11,NA,NA,30096,3716,NA,NA,135.817,360.4,2122.9
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,29439,3716,NA,NA,565.552,2.10000000000036,2044.4
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,29439,3716,NA,NA,371.209,2,4091.2
+"binarize3_exp(sce_sparse, ncores = 11)",11,NA,NA,30096,9290,NA,NA,341.96,924.300000000001,4557.2
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,29666,9290,NA,NA,1424.245,2.09999999999854,5136.5
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,29666,9290,NA,NA,903.026,2,7858.3
+"binarize3_exp(sce_sparse, ncores = 11)",11,NA,NA,30096,18580,NA,NA,712.907,1850,6978.8
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,29620,18580,NA,NA,2716.887,2.10000000000036,9079.1
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,29620,18580,NA,NA,1736.21,2,10003.4
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,15048,1858,NA,NA,51.106,214.800000000001,3259.2
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,15048,1858,NA,NA,51.981,214.800000000001,3257.2
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,15048,1858,NA,NA,51.988,214.800000000001,3258
+"binarize_exp(current_sce, ncores = 10)",10,NA,NA,15048,1858,NA,NA,36.663,214.699999999999,2997.4
+"binarize_exp(current_sce, ncores = 14)",14,NA,NA,15048,1858,NA,NA,30.053,214.699999999999,3253
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,15048,1858,NA,NA,51.359,93.0999999999985,586.099999999999
+"binarize3_exp(sce_sparse, ncores = 10)",10,NA,NA,15048,1858,NA,NA,35.846,92.9000000000015,518.700000000001
+"binarize3_exp(sce_sparse, ncores = 14)",14,NA,NA,15048,1858,NA,NA,27.706,92.9000000000015,518.700000000001
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,30096,3716,NA,NA,188.43,855.900000000001,5938.9
+"binarize_exp(current_sce, ncores = 10)",10,NA,NA,30096,3716,NA,NA,131.592,855.9,5297.6
+"binarize_exp(current_sce, ncores = 14)",14,NA,NA,30096,3716,NA,NA,104.614,855.9,8066.7
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,30096,3716,NA,NA,236.543,358.299999999999,2096.9
+"binarize3_exp(sce_sparse, ncores = 10)",10,NA,NA,30096,3716,NA,NA,149.167,358.299999999999,2097.1
+"binarize3_exp(sce_sparse, ncores = 14)",14,NA,NA,30096,3716,NA,NA,111.247,358.299999999999,2097.1
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,30096,9290,NA,NA,403.203,2135.8,11734.8
+"binarize_exp(current_sce, ncores = 10)",10,NA,NA,30096,9290,NA,NA,271.554,2135.8,14993.6
+"binarize_exp(current_sce, ncores = 14)",14,NA,NA,30096,9290,NA,NA,225.48,2135.8,14984.9
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,30096,9290,NA,NA,621.582,937.200000000001,4612.8
+"binarize3_exp(sce_sparse, ncores = 10)",10,NA,NA,30096,9290,NA,NA,383.838,937.199999999999,4612.8
+"binarize3_exp(sce_sparse, ncores = 14)",14,NA,NA,30096,9290,NA,NA,284.552,937.199999999999,4613.2
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,30096,18580,NA,NA,758.816,4269,27733.3
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,15048,1858,NA,NA,49.447,214.800000000001,3258.3
+"binarize_exp(current_sce, ncores = 10)",10,NA,NA,15048,1858,NA,NA,36.901,214.699999999999,2996.1
+"binarize_exp(current_sce, ncores = 14)",14,NA,NA,15048,1858,NA,NA,35.469,214.699999999999,3254
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,15048,1858,NA,NA,53.474,93.0999999999985,585.9
+"binarize3_exp(sce_sparse, ncores = 10)",10,NA,NA,15048,1858,NA,NA,35.972,92.9000000000015,518.6
+"binarize3_exp(sce_sparse, ncores = 14)",14,NA,NA,15048,1858,NA,NA,28.238,92.9000000000015,518.6
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,30096,3716,NA,NA,195.574,855.900000000001,5938.8
+"binarize_exp(current_sce, ncores = 10)",10,NA,NA,30096,3716,NA,NA,129.003,855.9,7706.5
+"binarize_exp(current_sce, ncores = 14)",14,NA,NA,30096,3716,NA,NA,103.655,855.9,7829.3
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,30096,3716,NA,NA,236.113,362.800000000001,2137.5
+"binarize3_exp(sce_sparse, ncores = 10)",10,NA,NA,30096,3716,NA,NA,148.771,362.799999999999,2169.5
+"binarize3_exp(sce_sparse, ncores = 14)",14,NA,NA,30096,3716,NA,NA,111.318,362.799999999999,2138.5
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,30096,9290,NA,NA,387.584,2135.9,11734.9
+"binarize_exp(current_sce, ncores = 10)",10,NA,NA,30096,9290,NA,NA,270.227,2135.9,14981.3
+"binarize_exp(current_sce, ncores = 14)",14,NA,NA,30096,9290,NA,NA,225.229,2135.9,14981.1
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,30096,9290,NA,NA,607.971,927.5,4558.1
+"binarize3_exp(sce_sparse, ncores = 10)",10,NA,NA,30096,9290,NA,NA,374.583,927.4,4275.5
+"binarize3_exp(sce_sparse, ncores = 14)",14,NA,NA,30096,9290,NA,NA,283.597,927.4,4558.5
+"binarize_exp(current_sce, ncores = 6)",6,NA,NA,30096,18580,NA,NA,758.362000000001,4269,21333.9
+"binarize_exp_pbmclapply(sce_sparse, ncores = 3)",3,NA,NA,15048,1858,NA,NA,92.112,50.6000000000004,510.4
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,15048,1858,NA,NA,39.763,50.2999999999993,450.200000000001
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,15048,1858,NA,NA,33.959,50.2999999999993,450.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,15048,1858,NA,NA,22.635,50.2999999999993,448.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 3)",3,NA,NA,30096,3716,NA,NA,421.919,198.800000000001,1895.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,3716,NA,NA,166.92,198.900000000001,1702.3
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,3716,NA,NA,138.148,198.900000000001,1895.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,3716,NA,NA,93.1560000000001,198.900000000001,1896.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 3)",3,NA,NA,30096,7432,NA,NA,774.143,391.6,3441.9
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,7432,NA,NA,294.186,391.5,3523.3
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,7432,NA,NA,239.907,391.5,3523.3
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,7432,NA,NA,156.983,391.5,3524
+"binarize_exp_pbmclapply(sce_sparse, ncores = 3)",3,NA,NA,30096,11148,NA,NA,1010.402,588.4,4520.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,11148,NA,NA,385.222,588.4,4363.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,11148,NA,NA,314.07,588.4,4521.4
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,11148,NA,NA,204.229,588.4,4521.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 3)",3,NA,NA,30096,14864,NA,NA,1511.234,777.1,5825.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,14864,NA,NA,573.468,777.1,5868
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,14864,NA,NA,461.384,777.1,5868.3
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,14864,NA,NA,295.592,777.1,5868.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,15048,1858,NA,NA,40.96,50.6000000000004,513.9
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,15048,1858,NA,NA,34.795,50.2999999999993,453.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,15048,1858,NA,NA,24.209,50.2999999999993,453.599999999999
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,15048,1858,NA,NA,19.352,50.2999999999993,434.099999999999
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,15048,1858,NA,NA,18.093,50.2999999999993,454.099999999999
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,3716,NA,NA,173.263,196.799999999999,1886
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,3716,NA,NA,139.991,196.799999999999,1890.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,3716,NA,NA,97.821,196.799999999999,1697.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,3716,NA,NA,73.422,196.799999999999,1891.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,3716,NA,NA,66.963,196.799999999999,1892.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,7432,NA,NA,307.076,390.400000000001,3435.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,7432,NA,NA,252.538,390.400000000001,3516.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,7432,NA,NA,166.406,390.400000000001,3516.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,7432,NA,NA,130.213,392.100000000002,3414.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,7432,NA,NA,128.392,394.099999999999,3406.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,9290,NA,NA,436.524,493.200000000001,3846.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,9290,NA,NA,352.747,493.200000000001,3846.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,9290,NA,NA,235.626,493.200000000001,3841.9
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,9290,NA,NA,174.029,495,3619
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,9290,NA,NA,162.447,496.900000000001,3593.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,11148,NA,NA,402.004,585.700000000001,4485.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,11148,NA,NA,323.852,585.700000000001,4366.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,11148,NA,NA,217.462,585.700000000001,4485.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,11148,NA,NA,162.422,587.300000000003,4495.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,11148,NA,NA,151.888,590,4374.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,14864,NA,NA,589.716,782.399999999998,5927.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,14864,NA,NA,478.139999999999,782.5,5927.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,14864,NA,NA,311.553000000001,782.5,5927.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,14864,NA,NA,227.643,784.900000000001,5893.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,14864,NA,NA,198.84,788.200000000001,5659.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,18580,NA,NA,941.708,987.100000000002,7275.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,18580,NA,NA,753.816,987.099999999999,7356.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,18580,NA,NA,488.874999999999,989.200000000001,7356.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,18580,NA,NA,359.833000000001,995,7212.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,18580,NA,NA,304.221,997.600000000002,7180.3
+"binarize_exp(current_sce, ncores = 8)",8,NA,NA,30096,18580,NA,NA,572.268,4269.2,23467.3
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,14864,NA,NA,295.592,777.1,5868.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,15048,1858,NA,NA,40.96,50.6000000000004,513.9
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,15048,1858,NA,NA,34.795,50.2999999999993,453.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,15048,1858,NA,NA,24.209,50.2999999999993,453.599999999999
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,15048,1858,NA,NA,19.352,50.2999999999993,434.099999999999
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,15048,1858,NA,NA,18.093,50.2999999999993,454.099999999999
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,3716,NA,NA,173.263,196.799999999999,1886
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,3716,NA,NA,139.991,196.799999999999,1890.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,3716,NA,NA,97.821,196.799999999999,1697.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,3716,NA,NA,73.422,196.799999999999,1891.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,3716,NA,NA,66.963,196.799999999999,1892.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,7432,NA,NA,307.076,390.400000000001,3435.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,7432,NA,NA,252.538,390.400000000001,3516.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,7432,NA,NA,166.406,390.400000000001,3516.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,7432,NA,NA,130.213,392.100000000002,3414.7
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,7432,NA,NA,128.392,394.099999999999,3406.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,9290,NA,NA,436.524,493.200000000001,3846.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,9290,NA,NA,352.747,493.200000000001,3846.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,9290,NA,NA,235.626,493.200000000001,3841.9
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,9290,NA,NA,174.029,495,3619
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,9290,NA,NA,162.447,496.900000000001,3593.5
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,11148,NA,NA,402.004,585.700000000001,4485.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,11148,NA,NA,323.852,585.700000000001,4366.2
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,11148,NA,NA,217.462,585.700000000001,4485.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,11148,NA,NA,162.422,587.300000000003,4495.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,11148,NA,NA,151.888,590,4374.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,14864,NA,NA,589.716,782.399999999998,5927.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,14864,NA,NA,478.139999999999,782.5,5927.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,14864,NA,NA,311.553000000001,782.5,5927.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,14864,NA,NA,227.643,784.900000000001,5893.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,14864,NA,NA,198.84,788.200000000001,5659.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 8)",8,NA,NA,30096,18580,NA,NA,941.708,987.100000000002,7275.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 10)",10,NA,NA,30096,18580,NA,NA,753.816,987.099999999999,7356.8
+"binarize_exp_pbmclapply(sce_sparse, ncores = 16)",16,NA,NA,30096,18580,NA,NA,488.874999999999,989.200000000001,7356.1
+"binarize_exp_pbmclapply(sce_sparse, ncores = 24)",24,NA,NA,30096,18580,NA,NA,359.833000000001,995,7212.6
+"binarize_exp_pbmclapply(sce_sparse, ncores = 32)",32,NA,NA,30096,18580,NA,NA,304.221,997.600000000002,7180.3
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,30096,18580,NA,NA,1205.045,1831.7,8445.5
+"binarize3_exp(sce_sparse, ncores = 8)",8,NA,NA,30096,18580,NA,NA,920.769,1831.5,8713.5
+"binarize3_exp(sce_sparse, ncores = 16)",16,NA,NA,30096,18580,NA,NA,492.702,1831.5,8714.2
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,29606,18580,NA,NA,2619.683,2.29999999999927,10306.2
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,29606,18580,NA,NA,1820.322,2,12041.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.204,213.599999999991,3240.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,8.056,853.600000000006,12947.4
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,15.048,1706.89999999999,22422.7
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,16.894,2133.5,27168.3
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,19.481,2560.10000000001,31888.8
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,28.214,3413.39999999999,41384.4
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,40.823,4266.59999999999,50871.1
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,81.846,8532.8,56925.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,271.249,17065.2,82683.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.247,213.599999999991,3240.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,8.159,853.600000000006,12947
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,14.351,1706.89999999999,22423
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,17.16,2133.5,27154.7
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,19.843,2560.10000000001,31899.8
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,30.755,3413.39999999999,41383.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,38.393,4266.59999999999,50848.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,82.533,8532.8,56929.9
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,291.59,17065.2,82651.4
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.142,213.599999999991,3240.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,7.97799999999999,853.600000000006,12942.9
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,14.122,1706.89999999999,22418.9
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,18.05,2133.5,27165.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,19.918,2560.10000000001,31906.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,28.044,3413.39999999999,41373.8
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,40.244,4266.59999999999,50864.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,84.403,8532.8,56902.3
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,264.496,17065.2,82648.4
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.239000000000004,33.6000000000058,137.800000000003
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.392000000000003,134.600000000006,538.900000000009
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.756,267.199999999997,1069.5
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.920999999999999,330.699999999997,1323.39999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.05799999999999,398,1592.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.389,536.300000000003,2145.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.765,675.800000000003,2703.90000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.52000000000001,1344.8,5379.60000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,6.691,2641.8,10568.1
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,185800,NA,NA,18.53,6680.8,26724.1
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.280000000000001,33.6000000000058,137.800000000003
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.406000000000006,135.199999999997,541.199999999997
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.759,270.399999999994,1082.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.930000000000007,334.5,1338.79999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.102,400.800000000003,1603.90000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.54000000000001,535.199999999997,2141.40000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.836,680.400000000009,2722.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.736,1323.09999999999,5293
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,7.119,2691.10000000001,10764.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,185800,NA,NA,23.759,6706.2,26825.4
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.239000000000004,33.6000000000058,137.800000000003
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.392000000000003,134.600000000006,538.900000000009
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.756,267.199999999997,1069.5
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.920999999999999,330.699999999997,1323.39999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.05799999999999,398,1592.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.389,536.300000000003,2145.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.765,675.800000000003,2703.90000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.52000000000001,1344.8,5379.60000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,6.691,2641.8,10568.1
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,185800,NA,NA,18.53,6680.8,26724.1
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.280000000000001,33.6000000000058,137.800000000003
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.406000000000006,135.199999999997,541.199999999997
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.759,270.399999999994,1082.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.930000000000007,334.5,1338.79999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.102,400.800000000003,1603.90000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.54000000000001,535.199999999997,2141.40000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.836,680.400000000009,2722.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.736,1323.09999999999,5293
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,7.119,2691.10000000001,10764.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,185800,NA,NA,23.759,6706.2,26825.4
+"binarize3_exp(sce_sparse, ncores = 6)",6,NA,NA,30096,18580,NA,NA,1205.045,1831.7,8445.5
+"binarize3_exp(sce_sparse, ncores = 8)",8,NA,NA,30096,18580,NA,NA,920.769,1831.5,8713.5
+"binarize3_exp(sce_sparse, ncores = 16)",16,NA,NA,30096,18580,NA,NA,492.702,1831.5,8714.2
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = TRUE)",NA,NA,TRUE,29606,18580,NA,NA,2619.683,2.29999999999927,10306.2
+"find_switch_logistic_fastglm2(sce_bined_2, downsample = FALSE)",NA,NA,FALSE,29606,18580,NA,NA,1820.322,2,12041.6
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.114,213.599999999991,3240.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.462,213.599999999991,3240.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.249,213.599999999991,3240.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.249,213.599999999991,3240.29999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.234000000000002,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,116.798,1.20000000001164,899.900000000009
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,90.329,1.09999999999127,2130.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.408999999999992,133.299999999988,533.899999999994
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,883.1,2.10000000000582,1726.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,586.823,2.09999999999127,4261
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.761999999999944,263.800000000003,1055.8
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,1732.87,2,3432.89999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,1074.188,2.10000000000582,8518
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.97400000000016,331.399999999994,1326.29999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,2147.744,2.10000000000582,4291.3
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,1385.629,2,10638.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.08100000000013,399.399999999994,1598.39999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,2450.45,2.10000000000582,5178.8
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,1571.766,2,12784.4
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.28999999999905,527.699999999997,2111.40000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,3150.946,2.10000000000582,6704.70000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,2084.685,2,17005.6
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.82400000000052,665.5,2662.59999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,4112.039,2,8494.79999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,2629.571,2.09999999999127,21286.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.7589999999982,1318.2,5273.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.249,213.599999999991,3240.29999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.228000000000002,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,115.697,1.20000000001164,899
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,91.793,1,2130.79999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.379000000000019,134.899999999994,540
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,885.459,2,1781.2
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,585.134,2.10000000000582,4245.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.753000000000156,262.800000000003,1051.90000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,1725.289,2.10000000000582,3413.5
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,1127.637,2.10000000000582,8594.5
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.981999999999971,332.100000000006,1329.10000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,2164.749,2.09999999999127,4281.2
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,1380.206,2.09999999999127,10694
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.15999999999985,402.899999999994,1612.09999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,2595.178,2.10000000000582,5201
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,1625.491,2.10000000000582,12825.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.45399999999972,535.099999999991,2140.89999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,3181.776,2.10000000000582,6914.90000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,2092.26,2.10000000000582,17109.5
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.68100000000049,669.900000000009,2680.3
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,3966.665,2.09999999999127,8454.59999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,2624.593,2.10000000000582,21408.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.29999999999927,1319.39999999999,5278.10000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.238,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,119.347,1.20000000001164,899.100000000006
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,94.835,1,2131.09999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.37299999999999,135,540.699999999997
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,917.201,2,1759.8
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,604.706,2,4260
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.779999999999973,266.699999999997,1067.5
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,1755.849,2,3362.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,1086.548,2.09999999999127,8538.59999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.978000000000065,328.600000000006,1315
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,2076.582,2.09999999999127,4235.59999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,1309.615,2.10000000000582,10689.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.00400000000081,399.5,1598.59999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,2381.926,2,5063.3
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,1565.98,2,12784.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.40099999999984,534.899999999994,2140.5
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,3338.675,2.10000000000582,6740.90000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,2100.932,2,17140.9
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.61000000000058,659.5,2638.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,4141.388,2.10000000000582,8539.90000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,2607.2,2,21266.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.53399999999965,1324.8,5300.10000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.238,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,119.347,1.20000000001164,899.100000000006
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,94.835,1,2131.09999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.37299999999999,135,540.699999999997
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,917.201,2,1759.8
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,604.706,2,4260
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.779999999999973,266.699999999997,1067.5
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,1755.849,2,3362.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,1086.548,2.09999999999127,8538.59999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.978000000000065,328.600000000006,1315
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,2076.582,2.09999999999127,4235.59999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,1309.615,2.10000000000582,10689.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.00400000000081,399.5,1598.59999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,2381.926,2,5063.3
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,1565.98,2,12784.7
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.40099999999984,534.899999999994,2140.5
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,3338.675,2.10000000000582,6740.90000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,2100.932,2,17140.9
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.61000000000058,659.5,2638.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,4141.388,2.10000000000582,8539.90000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,2607.2,2,21266.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.53399999999965,1324.8,5300.10000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.245000000000005,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,123,1.20000000001164,899.100000000006
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,97.202,1,2131.09999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.388999999999953,135.600000000006,542.899999999994
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,973.657,2,1740.09999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,628.201,2.10000000000582,4253
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.705999999999904,267.5,1070.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,1909.175,2.10000000000582,3420.2
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,1212.94,2,8558.89999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.845999999999549,329.800000000003,1319.8
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,2194.068,2,4218.09999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,1499.483,2.10000000000582,10649.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.01800000000003,400.599999999991,1602.89999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,2430.921,2.10000000000582,5108.10000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,1592.698,2.10000000000582,12751.1
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.35499999999956,543.100000000006,2172.89999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,3517.147,2.09999999999127,6871.2
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,2136.716,2.10000000000582,17085.9
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.63800000000265,666,2664.7
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,4038.647,2.10000000000582,8592.40000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,2622.124,2.10000000000582,21342.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.22699999999895,1335.20000000001,5341.40000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.245000000000005,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,123,1.20000000001164,899.100000000006
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,97.202,1,2131.09999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.388999999999953,135.600000000006,542.899999999994
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,973.657,2,1740.09999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,628.201,2.10000000000582,4253
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.705999999999904,267.5,1070.60000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,1909.175,2.10000000000582,3420.2
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,1212.94,2,8558.89999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.845999999999549,329.800000000003,1319.8
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,2194.068,2,4218.09999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,1499.483,2.10000000000582,10649.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.01800000000003,400.599999999991,1602.89999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,2430.921,2.10000000000582,5108.10000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,1592.698,2.10000000000582,12751.1
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.35499999999956,543.100000000006,2172.89999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,3517.147,2.09999999999127,6871.2
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,2136.716,2.10000000000582,17085.9
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.63800000000265,666,2664.7
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,4038.647,2.10000000000582,8592.40000000001
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,2622.124,2.10000000000582,21342.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.22699999999895,1335.20000000001,5341.40000000001
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.271,213.599999999991,3240.29999999999
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,56.818,1.60000000000582,1062.3
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,75.31,1.30000000000291,1145.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,8.63200000000001,853.599999999991,12942.7
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,146.969,2.69999999999709,2249.5
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,220.812,2.59999999999127,2870
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,15.6289999999999,1706.8,22415.2
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,215.932,2.69999999999709,4495
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,390.342,2.60000000000582,5741.2
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,18.4649999999999,2133.5,27154
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,255.025,2.69999999999709,5606.79999999999
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,477.085,2.69999999999709,7159.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,21.394,2560.09999999999,31897.3
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,291.15,2.60000000000582,6773.90000000001
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,537.028,2.69999999999709,8587.3
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,29.942,3413.40000000001,41359
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,364.83,2.69999999999709,9080
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,687.439,2.60000000000582,11476.1
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,40.2170000000001,4266.60000000001,50855.8
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,441.712,2.69999999999709,11214.1
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,845.318,2.69999999999709,14282.3
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,81.6600000000008,8532.90000000001,56925.8
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,37160,NA,NA,843.939,2.60000000000582,22450
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,37160,NA,NA,1688.36,2.60000000000582,28720.1
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,252.231,17065.3,82289.4
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,74320,NA,NA,1674.44,2.60000000000582,44862.6
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,74320,NA,NA,3347.703,2.70000000001164,57184
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,2.42800000000001,213.599999999991,3240.29999999999
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,15048,1858,NA,NA,57.058,1.60000000000582,1061.90000000001
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,15048,1858,NA,NA,73.799,1.39999999999418,1152.89999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,9.29000000000002,853.599999999991,12942.2
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,3716,NA,NA,143.658,2.59999999999127,2250.8
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,3716,NA,NA,222.633,2.59999999999127,2872.09999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,16.15,1706.8,22421.6
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,7432,NA,NA,214.287,2.59999999999127,4482.8
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,7432,NA,NA,395.514,2.60000000000582,5721.39999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,18.8340000000001,2133.5,27156.5
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,9290,NA,NA,255.364,2.69999999999709,5581.09999999999
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,9290,NA,NA,485.647,2.69999999999709,7165.29999999999
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,21.173,2560.09999999999,31909.4
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,11148,NA,NA,299.938,2.60000000000582,6712.10000000001
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,11148,NA,NA,555.329,2.59999999999127,8571.2
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,29.4520000000002,3413.3,41381.4
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,14864,NA,NA,372.204,2.69999999999709,9035.2
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,14864,NA,NA,689.658,2.60000000000582,11445.1
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,38.7450000000003,4266.60000000001,50864
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,18580,NA,NA,439.099,2.69999999999709,11249.8
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,18580,NA,NA,831.75,2.69999999999709,14309.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,84.0619999999999,8532.90000000001,56924.3
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,37160,NA,NA,834.514,2.69999999999709,22466.2
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,37160,NA,NA,1656.945,2.60000000000582,28522.5
+"binarize_exp(current_sce, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,243.264,17065.3,82289.2
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = TRUE)",NA,NA,TRUE,30096,74320,NA,NA,1675.512,2.70000000001164,44915
+"find_switch_logistic_fastglm(sce_bined_1fc, downsample = FALSE)",NA,NA,FALSE,30096,74320,NA,NA,3343.775,2.70000000001164,57321.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.232999999999997,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 1)",1,NA,TRUE,15048,1858,NA,NA,119.336,1.30000000000291,864.800000000003
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 1)",1,NA,FALSE,15048,1858,NA,NA,94.389,1,1933
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 2)",2,NA,TRUE,15048,1858,NA,NA,73.608,1.10000000000582,115.100000000006
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 4)",4,NA,TRUE,15048,1858,NA,NA,36.966,1.10000000000582,115.100000000006
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 8)",8,NA,TRUE,15048,1858,NA,NA,19.543,1.10000000000582,115.100000000006
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 16)",16,NA,TRUE,15048,1858,NA,NA,11.098,1.10000000000582,115.100000000006
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.413999999999987,132,528.800000000003
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 1)",1,NA,TRUE,30096,3716,NA,NA,896.066,2.09999999999127,1645.7
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 1)",1,NA,FALSE,30096,3716,NA,NA,606.136,2.10000000000582,4082.7
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 2)",2,NA,TRUE,30096,3716,NA,NA,474.165,2.10000000000582,423.699999999997
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 4)",4,NA,TRUE,30096,3716,NA,NA,258.631,2.10000000000582,423.699999999997
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 8)",8,NA,TRUE,30096,3716,NA,NA,134.93,2.10000000000582,423.699999999997
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 16)",16,NA,TRUE,30096,3716,NA,NA,78.5740000000001,2.10000000000582,423.699999999997
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.751000000000204,268.5,1074.79999999999
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 1)",1,NA,TRUE,30096,7432,NA,NA,1640.347,2.09999999999127,3331
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 1)",1,NA,FALSE,30096,7432,NA,NA,1157.226,2.10000000000582,8204.10000000001
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 2)",2,NA,TRUE,30096,7432,NA,NA,890.407999999999,2.10000000000582,833.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 4)",4,NA,TRUE,30096,7432,NA,NA,509.999,2.10000000000582,833.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 8)",8,NA,TRUE,30096,7432,NA,NA,258.811,2.10000000000582,833.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 16)",16,NA,TRUE,30096,7432,NA,NA,148.511,2.10000000000582,833.600000000006
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.905999999999949,336.100000000006,1345
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 1)",1,NA,TRUE,30096,9290,NA,NA,2019.314,2,4109.89999999999
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 1)",1,NA,FALSE,30096,9290,NA,NA,1348.993,2.09999999999127,10282.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 2)",2,NA,TRUE,30096,9290,NA,NA,1015.474,2.09999999999127,1036.3
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 4)",4,NA,TRUE,30096,9290,NA,NA,522.865,2.09999999999127,1036.3
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 8)",8,NA,TRUE,30096,9290,NA,NA,268.303,2.09999999999127,1036.3
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 16)",16,NA,TRUE,30096,9290,NA,NA,152.974,2.09999999999127,1036.39999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.09699999999975,401.100000000006,1605.10000000001
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 1)",1,NA,TRUE,30096,11148,NA,NA,2410.542,2.09999999999127,4974.39999999999
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 1)",1,NA,FALSE,30096,11148,NA,NA,1709.72,2.10000000000582,12293
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 2)",2,NA,TRUE,30096,11148,NA,NA,1264.423,2.10000000000582,1231.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 4)",4,NA,TRUE,30096,11148,NA,NA,708.904000000002,2.10000000000582,1231.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 8)",8,NA,TRUE,30096,11148,NA,NA,347.100999999999,2.10000000000582,1231.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 16)",16,NA,TRUE,30096,11148,NA,NA,187.617999999999,2.10000000000582,1231.5
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.55900000000111,536.400000000009,2146.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 1)",1,NA,TRUE,30096,14864,NA,NA,3201.746,2.09999999999127,6667.29999999999
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 1)",1,NA,FALSE,30096,14864,NA,NA,2135.33,2,16433.8
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 2)",2,NA,TRUE,30096,14864,NA,NA,1606.888,2,1637.8
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 4)",4,NA,TRUE,30096,14864,NA,NA,828.079000000002,2,1637.8
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 8)",8,NA,TRUE,30096,14864,NA,NA,419.519,2,1637.8
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = TRUE,      ncores = 16)",16,NA,TRUE,30096,14864,NA,NA,225.164000000001,2,1637.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.74799999999959,668.899999999994,2676.39999999999
+"binarize_exp(current_sce, ncores = 2)",2,NA,NA,30096,18580,NA,NA,2214.66,4269.2,35282.5
+"binarize_exp(current_sce, ncores = 3)",3,NA,NA,30096,18580,NA,NA,1527.064,4269.2,35179.3
+"binarize_exp(current_sce, ncores = 3)",3,NA,NA,30096,18580,NA,NA,1506.666,4269.2,35721.4
+"binarize_exp(current_sce, ncores = 2)",2,NA,NA,30096,18580,NA,NA,2214.66,4269.2,35282.5
+"binarize_exp(current_sce, ncores = 3)",3,NA,NA,30096,18580,NA,NA,1527.064,4269.2,35179.3
+"binarize_exp(current_sce, ncores = 3)",3,NA,NA,30096,18580,NA,NA,1506.666,4269.2,35721.4
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.225999999999999,33.6000000000058,137.800000000003
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 2)",2,NA,FALSE,15048,1858,NA,NA,45.078,1.20000000001164,118.600000000006
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 4)",4,NA,FALSE,15048,1858,NA,NA,24.66,1.09999999999127,114.899999999994
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 8)",8,NA,FALSE,15048,1858,NA,NA,12.882,1.09999999999127,114.899999999994
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 16)",16,NA,FALSE,15048,1858,NA,NA,7.5,1.09999999999127,115
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.372000000000014,132.5,530.600000000006
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 2)",2,NA,FALSE,30096,3716,NA,NA,276.31,2,424.700000000012
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 4)",4,NA,FALSE,30096,3716,NA,NA,142.343,2,424.699999999997
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 8)",8,NA,FALSE,30096,3716,NA,NA,73.586,2,424.699999999997
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 16)",16,NA,FALSE,30096,3716,NA,NA,39.624,2,424.699999999997
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.729999999999905,270.800000000003,1083.89999999999
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 2)",2,NA,FALSE,30096,7432,NA,NA,543.229,2.09999999999127,840
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 4)",4,NA,FALSE,30096,7432,NA,NA,281.716,2,839.899999999994
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 8)",8,NA,FALSE,30096,7432,NA,NA,150.471,2,840
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 16)",16,NA,FALSE,30096,7432,NA,NA,85.1659999999999,2,840
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.979000000000042,332.900000000009,1332.20000000001
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 2)",2,NA,FALSE,30096,9290,NA,NA,664.04,2.09999999999127,1026.39999999999
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 4)",4,NA,FALSE,30096,9290,NA,NA,343.929,2.10000000000582,1026.40000000001
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 8)",8,NA,FALSE,30096,9290,NA,NA,183.515,2.10000000000582,1026.40000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,37160,NA,NA,3.54,1332.7,5334.09999999999
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = TRUE)",NA,NA,TRUE,30096,37160,NA,NA,7905.755,2.20000000001164,17065
+"find_switch_logistic_fastglm2(sce_bined_2fc, downsample = FALSE)",NA,NA,FALSE,30096,37160,NA,NA,5303.719,2.09999999999127,42576.3
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,74320,NA,NA,10.5339999999997,2647.3,10590
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.253999999999998,33.6000000000058,137.800000000003
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.402999999999999,133.100000000006,533
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.754000000000005,273.300000000003,1093.90000000001
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.920000000000002,337,1348.60000000001
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 4)",4,NA,FALSE,30096,9290,NA,NA,345.101,2.30000000000291,1042.5
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 8)",8,NA,FALSE,30096,9290,NA,NA,187.68,2.10000000000582,1038.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,15048,1858,NA,NA,0.229999999999997,33.6000000000058,137.800000000003
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,3716,NA,NA,0.383000000000003,135.400000000009,542.200000000012
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,7432,NA,NA,0.713000000000001,269.199999999997,1077.2
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,9290,NA,NA,0.887,332.599999999991,1330.8
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,11148,NA,NA,1.05,397.099999999991,1588.79999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,14864,NA,NA,1.386,536.899999999994,2148.09999999999
+"binarize3_exp(sce_sparse, fix_cutoff = TRUE)",NA,TRUE,NA,30096,18580,NA,NA,1.71199999999999,666.5,2666.8
+"find_switch_logistic_fastglm_parallel(sce_bined_3fc, downsample = FALSE,      ncores = 4)",4,NA,FALSE,30096,18580,NA,NA,698.962,2.30000000000291,2031.90000000001
