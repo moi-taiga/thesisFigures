@@ -31,8 +31,6 @@ runtimes$fun <- gsub("binarize_exp", "original", runtimes$fun)
 runtimes$Peak_RAM_Used_GiB <- runtimes$Peak_RAM_Used_MiB / 1024
 
 # make N_Genes and N_Cells and fun catagorical variables
-runtimes$N_Genes <- as.factor(runtimes$N_Genes)
-runtimes$N_Cells <- as.factor(runtimes$N_Cells)
 runtimes$fun <- as.factor(runtimes$fun)
 
 # plot how fun: original and refactored 's elapsed time changes with number of cores
@@ -40,6 +38,11 @@ tmp <- runtimes[runtimes$fun %in% c("original", "refactored"), ]
 
 # only keep where N_Cells is 1858, 9290, 18580
 tmp <- tmp[tmp$N_Cells %in% c(1858, 9290, 18580), ]
+
+# set N cores to numeric so x axis is continuous
+tmp$N_Cores <- as.numeric(as.character(tmp$N_Cores))
+# set ncells to catagorical so shape is discrete
+tmp$N_Cells <- as.factor(tmp$N_Cells)
 
 # remove rows where N_Cores is 64
 tmp <- tmp[tmp$N_Cores != 64, ]
@@ -58,19 +61,19 @@ ggplot(tmp, aes(x = N_Cores, y = Elapsed_Time, color=fun, shape=N_Cells)) +
 dev.off()
 
 
+
 # this time plot RAM*Ncores
 # multiplying by N_Cores gives an estimate of the total memory used across all cores,
 # this is a pessamistic estimate as mcapply will not coppy the entire object to each core.
 
-# remove n cell 3716
-tmp <- tmp[tmp$N_Cells != 3716, ]
+# return n cores to numeric
+tmp$N_Cores <- as.numeric(as.character(tmp$N_Cores))
 
 tmp$RAM_Ncores <- tmp$Peak_RAM_Used_GiB * tmp$N_Cores
 png(filename = "binarize_memory_Ncores_VS_cpu.png", width = 10, height = 8, units = "in", res = 300)
 ggplot(tmp, aes(x = N_Cores, y = RAM_Ncores, color=fun, shape = N_Cells)) +
   geom_point(size = 4) +
   geom_smooth(method = "lm", se = FALSE, aes(group = interaction(fun, N_Cells))) +
-  scale_x_continuous(breaks = c(1, 3, 8, 16, 24, 32, 64)) +
   geom_hline(yintercept=240, linetype="dashed", color="grey") + 
   labs(color = "Function",
        title = "Binarize_exp() - Memory Usage vs Number of Cores",
@@ -80,14 +83,19 @@ ggplot(tmp, aes(x = N_Cores, y = RAM_Ncores, color=fun, shape = N_Cells)) +
 dev.off()
 
 
-# plot the elapsed time of bin nd bin3 where fix_cutoff is TRUE
+
+# plot the elapsed time where fix_cutoff is TRUE
 # use N cells as x axis and color bin and bin3
 tmp <- runtimes[runtimes$fun %in% c("original", "Arefactored") & runtimes$Fix_Cutoff == TRUE, ]
 tmp$fun <- gsub("Arefactored", "refactored", tmp$fun)
-#flip color
-#levels(tmp$fun) <- rev(levels(tmp$fun))
+# set N-cells to numeric so x axis is continuous
+tmp$N_Cells <- as.numeric(as.character(tmp$N_Cells))
+
 # remove rows where cutoff is NA
 tmp <- tmp[!is.na(tmp$Fix_Cutoff), ]
+# remove the rows where N_Cells is 185800
+tmp <- tmp[tmp$N_Cells != 185800, ]
+
 png(filename = "binarize_runtime_VS_Ncells_fix_cutoff.png", width = 10, height = 8, units = "in", res = 300)  
 ggplot(tmp, aes(x = N_Cells, y = Elapsed_Time, color=fun)) +
   geom_point(size = 4) +
@@ -99,40 +107,85 @@ ggplot(tmp, aes(x = N_Cells, y = Elapsed_Time, color=fun)) +
   theme_minimal()
 dev.off()
 
-
-
+# plot the peak RAM usage where fix_cutoff is TRUE
+png(filename = "binarize_memory_VS_Ncells_fix_cutoff.png", width = 10, height = 8, units = "in", res = 300)
+ggplot(tmp, aes(x = N_Cells, y = Peak_RAM_Used_GiB, color=fun)) +
+  geom_point(size = 4) +
+  geom_smooth(method = "lm", se = FALSE, aes(group = fun)) +
+  labs(color = "Function",
+       title = "Binarize_exp(fix_cutoff = TRUE) - Peak RAM Used vs Number of Cells",
+       x = "Number of Cells",
+       y = "Peak RAM Used (GiB)") +
+  theme_minimal()
+dev.off()
 
 
 # plot the elapsed time of glm and glm2 
 
-# convert find_switch_logistic_fastglm to glm
-# and find_switch_logistic_fastglm2 to glm2
-runtimes$fun <- gsub("find_switch_logistic_fastglm_parallel", "refactored", runtimes$fun)
-runtimes$fun <- gsub("find_switch_logistic_fastglm", "original", runtimes$fun)
+# subset the data to only include glm and glm2
+GLMruntimes <- runtimes[runtimes$fun %in% c("find_switch_logistic_fastglm", "find_switch_logistic_fastglm_parallel"), ]
+
+GLMruntimes$fun <- gsub("find_switch_logistic_fastglm_parallel", "refactored", GLMruntimes$fun)
+GLMruntimes$fun <- gsub("find_switch_logistic_fastglm", "original", GLMruntimes$fun)
 
 
+# remove rows where N_Cells is NA
+GLMruntimes <- GLMruntimes[!is.na(GLMruntimes$N_Cells), ]
+# make sure n cells is numeric
+GLMruntimes$N_Cells <- as.numeric(as.character(GLMruntimes$N_Cells))
+# remove n cells above 10000
+GLMruntimes <- GLMruntimes[GLMruntimes$N_Cells <= 10000, ]
 
-# sahpe by downsample 
-# x axis is N cells and color is glm and glm2
-tmp <- runtimes[runtimes$fun %in% c("glm", "glm2"), ]
-png(filename = "glm_glm2_runtime_VS_Ncells_downsample.png", width = 10, height = 8, units = "in", res = 300)
-ggplot(tmp, aes(x = N_Cells, y = Elapsed_Time, color=fun, shape=Downsample)) +
-  geom_point(size = 3) +
-  geom_line(aes(group=Downsample)) +
-  labs(title = "Elapsed Time vs Number of Cells for glm and glm2.",
+# set n cores to categorical so shape is discrete
+GLMruntimes$N_Cores <- as.factor(GLMruntimes$N_Cores)
+
+# where N_Cores is NA, set to 1
+GLMruntimes$N_Cores[is.na(GLMruntimes$N_Cores)] <- 1
+
+# filter for downsample TRUE
+GLMruntimes <- GLMruntimes[GLMruntimes$Downsample == FALSE, ]
+# remove rows where N_Cores is 2
+GLMruntimes <- GLMruntimes[GLMruntimes$N_Cores != 2, ]
+
+
+# x axis is N cells and color is fun
+png(filename = "glm_runtime_VS_Ncells.png", width = 10, height = 8, units = "in", res = 300)
+ggplot(GLMruntimes, aes(x = N_Cells, y = Elapsed_Time, color=fun, shape= N_Cores)) +
+  geom_point(size = 4) +
+  geom_smooth(method = "lm", se = FALSE, aes(group = interaction(fun, N_Cores))) +
+  labs(title = "find_switch_logistic_fastglm() - Elapsed Time vs Number of Cells",
        x = "Number of Cells",
        y = "Elapsed Time (seconds)") + 
     theme_minimal()
 dev.off()
 
+#set N_Cores to numeric so we can multiply by it
+GLMruntimes$N_Cores <- as.numeric(as.character(GLMruntimes$N_Cores))
+# make a new column called Total_RAM_ESTIMATE_MiB which is Total_RAM_Used_GiB * N_Cores
+GLMruntimes$Total_RAM_ESTIMATE_MiB <- GLMruntimes$Peak_RAM_Used_MiB * GLMruntimes$N_Cores
+
+# set n cores back to factor
+GLMruntimes$N_Cores <- as.factor(GLMruntimes$N_Cores)
 # plot the memory usage of glm and glm2 
-tmp <- runtimes[runtimes$fun %in% c("glm", "glm2"), ]
-png(filename = "glm_glm2_memory_VS_Ncells_downsample.png", width = 10, height = 8, units = "in", res = 300)
-ggplot(tmp, aes(x = N_Cells, y = Peak_RAM_Used_GiB, color=fun, shape=Downsample)) +
-  geom_point(size = 3) +
-  geom_line(aes(group=Downsample)) +
-  labs(title = "Peak RAM Used vs Number of Cells for glm and glm2.",
+png(filename = "glm_memory_VS_Ncells.png", width = 10, height = 8, units = "in", res = 300)
+ggplot(GLMruntimes, aes(x = N_Cells, y = Total_RAM_ESTIMATE_MiB, color=fun, shape= N_Cores)) +
+  geom_point(size = 4) +
+  geom_smooth(method = "lm",  se = FALSE, aes(group = interaction(fun, N_Cores))) +
+  labs(title = "find_switch_logistic_fastglm() - Peak RAM Used vs Number of Cells",
        x = "Number of Cells",
-       y = "Peak RAM Used (GiB)") +
+       y = "Peak Total_RAM_ESTIMATE_MiB Used (MiB)") +
+    theme_minimal()
+dev.off()
+
+
+
+# plot the memory usage of glm and glm2 
+png(filename = "tmp.png", width = 10, height = 8, units = "in", res = 300)
+ggplot(GLMruntimes, aes(x = N_Cells, y = Peak_RAM_Used_MiB, color=fun, shape= N_Cores)) +
+  geom_point(size = 4) +
+  geom_smooth(method = "lm",  se = FALSE, aes(group = interaction(fun, N_Cores))) +
+  labs(title = "find_switch_logistic_fastglm() - Peak RAM Used vs Number of Cells",
+       x = "Number of Cells",
+       y = "Peak RAM Used (MiB)") +
     theme_minimal()
 dev.off()
