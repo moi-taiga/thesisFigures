@@ -48,16 +48,17 @@ tmp$N_Cells <- as.factor(tmp$N_Cells)
 tmp <- tmp[tmp$N_Cores != 64, ]
 #remove where n cells is NA
 tmp <- tmp[!is.na(tmp$N_Cells), ]
-png(filename = "binarize_runtime_VS_cpu.png", width = 10, height = 8, units = "in", res = 300)
+png(filename = "binarize_runtime_VS_Ncores.png", width = 10, height = 8, units = "in", res = 300)
 ggplot(tmp, aes(x = N_Cores, y = Elapsed_Time, color=fun, shape=N_Cells)) +
     geom_point(size = 4) +
     geom_line() +
-    scale_x_continuous(breaks = c(1, 3, 8, 16, 24, 32)) +
+    scale_x_continuous(breaks = c(1, 4, 8, 16, 32), limits = c(1, NA)) +
     labs(color = "Function", 
          title = "Binarize_exp() - Elapsed Time vs Number of Cores",
              x = "Number of Cores",
              y = "Elapsed Time (seconds)") +
-    theme_minimal()
+    theme_minimal() +
+    theme(panel.grid.minor.x = element_blank())
 dev.off()
 
 
