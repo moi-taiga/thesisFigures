@@ -10,7 +10,7 @@ sce2 <- gs2_bin(sce2, ncores = 7)
 ## with downsampling. This step takes less than 1 mins
 # library fas
 library(fastglm)
-sce2 <- gs2_glm(sce2, downsample = TRUE, ncores = 7)
+sce2 <- gs2_glm(sce2, downsample = TRUE, ncores = 3)
 sg2_allgenes <- filter_switchgenes(sce2, allgenes = TRUE, r2cutoff = 0.00)
 
 

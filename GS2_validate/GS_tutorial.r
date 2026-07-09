@@ -33,3 +33,6 @@ dev.off()
 
 # save the sce_p1 and sgobject
 save(sce_p1, sg_allgenes, file = "/home/mtn1n22/scratch/thesisFigures/GS2_validate/old_switching_genes_data.RData")
+
+
+
