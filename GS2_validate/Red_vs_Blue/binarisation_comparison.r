@@ -5,9 +5,9 @@ library(ggplot2)
 
 # 1. Define Gene Lists and Colour Mapping
 # , "MALAT1"
-red_genes <- c("TNNI1", "POU5F1") # shared
-green_genes <- c("PRELID1", "MARCKSL1") # unique to original
-blue_genes <- c("LDHA", "PKM") # unique to refactored
+red_genes <- c("TNNI1", "TFG") # shared
+green_genes <- c("PRELID1", "SSBP2") # unique to original
+blue_genes <- c("LDHA", "STARD10") # unique to refactored
 my_genes <- c(red_genes, green_genes, blue_genes)
 
 # Construct a reference data frame for gene categorisation
@@ -68,12 +68,14 @@ for (gene in my_genes) {
   )
 }
 
-# density_df <- bind_rows(density_list) %>%
-#   left_join(gene_colours, by = "Gene")
-  # Define the explicit order: Red 1, Green 1, Blue 1, Red 2, Green 2, Blue 2
-target_order <- c("TNNI1", "PRELID1", "LDHA", "POU5F1", "MARCKSL1", "PKM")
+# 1. Construct the density data frame from the loop output
+density_df <- bind_rows(density_list) %>%
+  left_join(gene_colours, by = "Gene")
 
-# Convert the Gene column to an ordered factor in both data frames
+# Dynamically interleave the arrays: Red 1, Green 1, Blue 1, Red 2, Green 2, Blue 2
+target_order <- as.vector(rbind(red_genes, green_genes, blue_genes))
+
+# Enforce the order in both data frames
 expr_long <- expr_long %>%
   mutate(Gene = factor(Gene, levels = target_order))
 
@@ -184,8 +186,19 @@ for (gene in my_genes) {
   )
 }
 
+# 1. Construct the density data frame from the loop output
 density_df <- bind_rows(density_list) %>%
   left_join(gene_colours, by = "Gene")
+
+# Dynamically interleave the arrays: Red 1, Green 1, Blue 1, Red 2, Green 2, Blue 2
+target_order <- as.vector(rbind(red_genes, green_genes, blue_genes))
+
+# Enforce the order in both data frames
+expr_long <- expr_long %>%
+  mutate(Gene = factor(Gene, levels = target_order))
+
+density_df <- density_df %>%
+  mutate(Gene = factor(Gene, levels = target_order))
 
 # 5. Generate Faceted Plot
 png(paste0(output_dir, "GS2_BINexpression_gmm.png"), width = 14, height = 10, units = "in", res = 300)

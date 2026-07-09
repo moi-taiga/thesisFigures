@@ -5,9 +5,9 @@ library(ggplot2)
 
 # 1. Define Gene Lists and Colour Mapping
 # , "MALAT1"
-red_genes <- c("TNNI1", "POU5F1") # shared
-green_genes <- c("PRELID1", "MARCKSL1") # unique to original
-blue_genes <- c("LDHA", "PKM") # unique to refactored
+red_genes <- c("TNNI1", "TFG") # shared
+green_genes <- c("PRELID1", "SSBP2") # unique to original
+blue_genes <- c("LDHA", "STARD10") # unique to refactored
 my_genes <- c(red_genes, green_genes, blue_genes)
 
 # Construct a reference data frame for gene categorisation
@@ -53,7 +53,7 @@ plot_data_long <- gene_df %>%
     values_to = "Expression"
   ) %>%
   left_join(gene_colours, by = "Gene") %>%
-  mutate(FacetLabel = paste0(Gene, " (", ColourGroup, " List)"))
+  mutate(FacetLabel = Gene)
 
 # 1. Interleave the Facet Order
 plot_data_long <- plot_data_long %>%
@@ -134,7 +134,7 @@ plot_data_long <- gene_df %>%
     values_to = "Expression"
   ) %>%
   left_join(gene_colours, by = "Gene") %>%
-  mutate(FacetLabel = paste0(Gene, " (", ColourGroup, " List)"))
+  mutate(FacetLabel = paste0(Gene))
 
 # 1. Interleave the Facet Order
 plot_data_long <- plot_data_long %>%
