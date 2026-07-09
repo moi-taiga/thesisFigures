@@ -31,6 +31,23 @@ UQ_GS2 <- subset(gs2, geneID %in% uniqueGenes_GS2)
 
 UQ_sg2_allgenes <- subset(sg2_allgenes, geneID %in% uniqueGenes_GS2)
 
+# ##scratch 
+# #order UQ_sg2_allgenes by pseudoR2
+# scratch <- UQ_sg2_allgenes[order(UQ_sg2_allgenes$pseudoR2s, decreasing = TRUE), ]
+
+# # do the same for UQ_OG2
+# scratch_OG2 <- 
+
+# # order the merged)allgenes by pseudoR2
+# scratch_m <- merged_allgenes[order(merged_allgenes$pseudoR2s, decreasing = TRUE), ]
+
+# # check if TFG is in UQ_OG2 or UQ_sg2_allgenes
+# TFG_in_OG2 <- "TFG" %in% UQ_OG2$geneID
+# TFG_in_GS2 <- "TFG" %in% UQ_sg2_allgenes$geneID
+
+# ##
+
+
 # Combine the full original dataset with unique genes from the refactored dataset
 merged_allgenes <- rbind(sg_allgenes, UQ_sg2_allgenes)
 
