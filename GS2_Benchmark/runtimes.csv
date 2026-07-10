@@ -560,3 +560,4 @@
 "binarize_exp_pbmclapply(sce_sparse, ncores = 2)",2,NA,NA,30096,18580,NA,NA,3789.411,993.800000000003,7259
 "binarize_exp_pbmclapply(sce_sparse, ncores = 3)",3,NA,NA,30096,18580,NA,NA,2518.2,993.799999999988,7767.2
 "binarize_exp_pbmclapply(sce_sparse, ncores = 4)",4,NA,NA,30096,18580,NA,NA,2028.703,1002.89999999999,7360.29999999999
+"binarize_exp(current_sce, ncores = 1)",1,NA,NA,30096,18580,NA,NA,4243.479,4269.2,40229.8
