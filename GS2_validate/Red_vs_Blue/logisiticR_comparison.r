@@ -5,10 +5,13 @@ library(ggplot2)
 
 # 1. Define Gene Lists and Colour Mapping
 # , "MALAT1"
-red_genes <- c("TNNI1", "TFG") # shared
+red_genes <- c("TFG", "TNNI1") # shared
 green_genes <- c("PRELID1", "SSBP2") # unique to original
 blue_genes <- c("LDHA", "STARD10") # unique to refactored
 my_genes <- c(red_genes, green_genes, blue_genes)
+
+# Generate the interleaved target sequence
+target_order <- as.vector(rbind(rev(red_genes), green_genes, blue_genes))
 
 # Construct a reference data frame for gene categorisation
 gene_colours <- data.frame(
@@ -53,20 +56,8 @@ plot_data_long <- gene_df %>%
     values_to = "Expression"
   ) %>%
   left_join(gene_colours, by = "Gene") %>%
-  mutate(FacetLabel = Gene)
+  mutate(FacetLabel = factor(Gene, levels = target_order))
 
-# 1. Interleave the Facet Order
-plot_data_long <- plot_data_long %>%
-  # Define the required repeating colour sequence
-  mutate(ColourGroup = factor(ColourGroup, levels = c("Red", "Green", "Blue"))) %>%
-  # Group by colour to assign a ranking to the genes within each list
-  group_by(ColourGroup) %>%
-  mutate(GeneIndex = dense_rank(Gene)) %>%
-  ungroup() %>%
-  # Sort by the rank FIRST, then by the colour sequence
-  arrange(GeneIndex, ColourGroup) %>%
-  # Lock the interleaved order into the factor levels
-  mutate(FacetLabel = factor(FacetLabel, levels = unique(FacetLabel)))
 
 # 2. Generate Faceted Logistic Fit Plot
 png(paste0(output_dir, "OG-logistics.png"), width = 12, height = 6, units = "in", res = 300)
@@ -134,20 +125,8 @@ plot_data_long <- gene_df %>%
     values_to = "Expression"
   ) %>%
   left_join(gene_colours, by = "Gene") %>%
-  mutate(FacetLabel = paste0(Gene))
+  mutate(FacetLabel = factor(Gene, levels = target_order))
 
-# 1. Interleave the Facet Order
-plot_data_long <- plot_data_long %>%
-  # Define the required repeating colour sequence
-  mutate(ColourGroup = factor(ColourGroup, levels = c("Red", "Green", "Blue"))) %>%
-  # Group by colour to assign a ranking to the genes within each list
-  group_by(ColourGroup) %>%
-  mutate(GeneIndex = dense_rank(Gene)) %>%
-  ungroup() %>%
-  # Sort by the rank FIRST, then by the colour sequence
-  arrange(GeneIndex, ColourGroup) %>%
-  # Lock the interleaved order into the factor levels
-  mutate(FacetLabel = factor(FacetLabel, levels = unique(FacetLabel)))
 
 # 2. Generate Faceted Logistic Fit Plot
 png(paste0(output_dir, "GS2-logistics.png"), width = 12, height = 6, units = "in", res = 300)
